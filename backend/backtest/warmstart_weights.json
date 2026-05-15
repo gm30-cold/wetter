@@ -1,0 +1,190 @@
+{
+  "dach": {
+    "stats": {
+      "icon_d2": {
+        "mae_temp": 0.806747311827957,
+        "mae_precip": 0.07026881720430107,
+        "n_temp": 3720
+      },
+      "icon_eu": {
+        "mae_temp": 0.7010215053763441,
+        "mae_precip": 0.060940860215053766,
+        "n_temp": 3720
+      },
+      "icon_global": {
+        "mae_temp": 0.9168279569892474,
+        "mae_precip": 0.0621236559139785,
+        "n_temp": 3720
+      },
+      "ecmwf_ifs025": {
+        "mae_temp": 0.6171505376344086,
+        "mae_precip": 0.04739247311827957,
+        "n_temp": 3720
+      },
+      "ecmwf_aifs025": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "gfs_seamless": {
+        "mae_temp": 1.08502688172043,
+        "mae_precip": 0.0831989247311828,
+        "n_temp": 3720
+      },
+      "meteofrance_arome_france_hd": {
+        "mae_temp": 1.1891465053763441,
+        "mae_precip": 0.08413978494623656,
+        "n_temp": 2976
+      },
+      "meteofrance_arpege_europe": {
+        "mae_temp": 0.7949193548387097,
+        "mae_precip": 0.061505376344086024,
+        "n_temp": 3720
+      },
+      "jma_msm": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "gem_seamless": {
+        "mae_temp": 0.9823924731182796,
+        "mae_precip": 0.061505376344086024,
+        "n_temp": 3720
+      }
+    },
+    "weights": {
+      "icon_d2": 0.1316,
+      "icon_eu": 0.1515,
+      "icon_global": 0.1158,
+      "ecmwf_ifs025": 0.1721,
+      "gfs_seamless": 0.0979,
+      "meteofrance_arome_france_hd": 0.0893,
+      "meteofrance_arpege_europe": 0.1336,
+      "gem_seamless": 0.1081
+    }
+  },
+  "westeu": {
+    "stats": {
+      "icon_d2": {
+        "mae_temp": 0.737231182795699,
+        "mae_precip": 0.11518817204301075,
+        "n_temp": 1488
+      },
+      "icon_eu": {
+        "mae_temp": 0.8016801075268817,
+        "mae_precip": 0.10456989247311828,
+        "n_temp": 2976
+      },
+      "icon_global": {
+        "mae_temp": 0.8979502688172043,
+        "mae_precip": 0.11374327956989247,
+        "n_temp": 2976
+      },
+      "ecmwf_ifs025": {
+        "mae_temp": 0.6532930107526882,
+        "mae_precip": 0.10433467741935484,
+        "n_temp": 2976
+      },
+      "ecmwf_aifs025": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "gfs_seamless": {
+        "mae_temp": 0.9560483870967742,
+        "mae_precip": 0.1061491935483871,
+        "n_temp": 2976
+      },
+      "meteofrance_arome_france_hd": {
+        "mae_temp": 1.1120967741935484,
+        "mae_precip": 0.11589381720430107,
+        "n_temp": 2976
+      },
+      "meteofrance_arpege_europe": {
+        "mae_temp": 0.9275537634408603,
+        "mae_precip": 0.11528897849462366,
+        "n_temp": 2976
+      },
+      "jma_msm": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "gem_seamless": {
+        "mae_temp": 1.2891129032258064,
+        "mae_precip": 0.1123991935483871,
+        "n_temp": 2976
+      }
+    },
+    "weights": {
+      "icon_d2": 0.1499,
+      "icon_eu": 0.1379,
+      "icon_global": 0.1231,
+      "ecmwf_ifs025": 0.1692,
+      "gfs_seamless": 0.1156,
+      "meteofrance_arome_france_hd": 0.0994,
+      "meteofrance_arpege_europe": 0.1192,
+      "gem_seamless": 0.0857
+    }
+  },
+  "northam": {
+    "stats": {
+      "icon_d2": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "icon_eu": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "icon_global": {
+        "mae_temp": 1.1814068100358424,
+        "mae_precip": 0.09475806451612903,
+        "n_temp": 2232
+      },
+      "ecmwf_ifs025": {
+        "mae_temp": 0.622983870967742,
+        "mae_precip": 0.0725358422939068,
+        "n_temp": 2232
+      },
+      "ecmwf_aifs025": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "gfs_seamless": {
+        "mae_temp": 1.0867383512544804,
+        "mae_precip": 0.09014336917562724,
+        "n_temp": 2232
+      },
+      "meteofrance_arome_france_hd": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "meteofrance_arpege_europe": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "jma_msm": {
+        "mae_temp": Infinity,
+        "mae_precip": Infinity,
+        "n_temp": 0
+      },
+      "gem_seamless": {
+        "mae_temp": 1.5441308243727598,
+        "mae_precip": 0.13978494623655913,
+        "n_temp": 2232
+      }
+    },
+    "weights": {
+      "icon_global": 0.2106,
+      "ecmwf_ifs025": 0.3994,
+      "gfs_seamless": 0.2289,
+      "gem_seamless": 0.1611
+    }
+  }
+}

@@ -13,7 +13,7 @@ export function formatWeekday(ts: number): string {
 
 export function formatDayLong(ts: number): string {
   return new Date(ts).toLocaleDateString('de-DE', {
-    weekday: 'long',
+    weekday: 'short',
     day: 'numeric',
     month: 'short',
   })

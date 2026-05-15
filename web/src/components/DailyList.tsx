@@ -112,37 +112,39 @@ function DayRow({
     <div className={!isLast || open ? 'border-b border-white/5' : ''}>
       <button
         onClick={onToggle}
-        className="flex w-full items-center gap-3 py-2.5 text-left transition-colors hover:bg-white/[0.03]"
+        className="flex w-full items-center gap-2.5 py-2.5 text-left transition-colors hover:bg-white/[0.03]"
       >
-        <div className="flex w-28 shrink-0 items-center gap-1.5 text-sm capitalize">
-          <span
-            className={`text-[10px] text-white/35 transition-transform ${open ? 'rotate-90' : ''}`}
-          >
-            ▶
-          </span>
-          {formatDayLong(day.date)}
-        </div>
-        <div className="w-7 text-center text-lg">{code.icon}</div>
-        <div className="num w-16 shrink-0 text-[11px] text-sky-300">
+        <span
+          className={`shrink-0 text-[10px] text-white/35 transition-transform ${
+            open ? 'rotate-90' : ''
+          }`}
+        >
+          ▶
+        </span>
+        <div className="w-[88px] shrink-0 truncate text-sm">{formatDayLong(day.date)}</div>
+        <div className="w-6 shrink-0 text-center text-lg">{code.icon}</div>
+        <div className="num w-12 shrink-0 text-[11px] text-sky-300">
           {precipProbMax > 0.1 && <span>{Math.round(precipProbMax * 100)}%</span>}
           {precipTotal > 0.2 && (
             <div className="num text-[10px] text-white/50">{formatNumber(precipTotal, 1)} mm</div>
           )}
         </div>
-        <div className="flex flex-1 items-center justify-end gap-2">
-          {expert && <DisagreementBadge level={disagreement} />}
-          <div className="num w-24 text-right text-sm">
-            {tMin != null && tMax != null ? (
-              <>
-                <span className="text-white/50">{formatNumber(tMin, 0)}°</span>
-                <span className="mx-1 text-white/30">—</span>
-                <span className="font-medium">{formatNumber(tMax, 0)}°</span>
-              </>
-            ) : (
-              '—'
-            )}
-          </div>
+        <div className="num flex items-baseline gap-1 text-sm">
+          {tMin != null && tMax != null ? (
+            <>
+              <span className="text-white/50">{formatNumber(tMin, 0)}°</span>
+              <span className="text-white/25">–</span>
+              <span className="font-medium">{formatNumber(tMax, 0)}°</span>
+            </>
+          ) : (
+            '—'
+          )}
         </div>
+        {expert && (
+          <div className="ml-auto shrink-0">
+            <DisagreementBadge level={disagreement} />
+          </div>
+        )}
       </button>
       <AnimatePresence initial={false}>
         {open && (

@@ -228,8 +228,7 @@ function computeTickLabel(
 function pickTickIndices(n: number): number[] {
   if (n <= 6) return [0, n - 1]
   if (n <= 14) return [0, Math.floor(n / 2), n - 1]
-  if (n <= 28) return [0, Math.floor(n / 3), Math.floor((2 * n) / 3), n - 1]
-  return [0, Math.floor(n / 4), Math.floor(n / 2), Math.floor((3 * n) / 4), n - 1]
+  return [0, Math.floor(n / 3), Math.floor((2 * n) / 3), n - 1]
 }
 
 function findDayBreaks(times: number[]): number[] {

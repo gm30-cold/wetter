@@ -42,7 +42,7 @@ export function MetricTile({
       disabled={!canExpand}
       className={`relative col-span-1 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] px-3.5 py-3 text-left transition-all ${
         canExpand ? 'hover:border-white/20 active:scale-[0.98]' : ''
-      } ${open ? 'sm:col-span-2' : ''}`}
+      } ${open ? 'col-span-full' : ''}`}
     >
       <div
         className={`absolute -bottom-6 -right-6 h-16 w-16 rounded-full bg-gradient-to-br ${gradient} opacity-20 blur-xl`}

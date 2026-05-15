@@ -30,9 +30,9 @@ export default function App() {
     <div className="relative min-h-dvh w-full">
       <AuroraBackground now={now} />
 
-      <header className="safe-top sticky top-0 z-30 px-4 pb-3 pt-4 backdrop-blur-md">
-        <div className="mx-auto flex max-w-2xl items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
+      <header className="safe-top sticky top-0 z-30 px-3 pb-3 backdrop-blur-md sm:px-4">
+        <div className="mx-auto flex max-w-2xl items-center justify-between gap-2 sm:gap-3">
+          <div className="flex min-w-0 items-center gap-2 sm:gap-3">
             <Logo />
             <PlaceSearch
               currentPlace={location.placeName}
@@ -99,11 +99,9 @@ export default function App() {
 
 function Logo() {
   return (
-    <div className="flex items-center gap-2">
-      <div className="relative h-8 w-8 rounded-xl bg-gradient-to-br from-sky-300 to-indigo-500 shadow-lg shadow-indigo-500/30">
-        <div className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-amber-200" />
-      </div>
-      <div className="text-base font-medium tracking-tight">Wetterfusion</div>
+    <div className="relative h-9 w-9 shrink-0 rounded-xl bg-gradient-to-br from-sky-300 to-indigo-500 shadow-lg shadow-indigo-500/30">
+      <div className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-amber-200" />
+      <span className="sr-only">Wetterfusion</span>
     </div>
   )
 }

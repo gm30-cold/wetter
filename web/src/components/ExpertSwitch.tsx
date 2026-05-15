@@ -15,7 +15,7 @@ export function ExpertSwitch({ on, onChange }: Props) {
       onClick={() => onChange(!on)}
       className="group relative flex items-center gap-3"
     >
-      <span className="text-xs font-medium tracking-wide uppercase text-white/70 group-hover:text-white transition-colors">
+      <span className="hidden text-xs font-medium uppercase tracking-wide text-white/70 transition-colors group-hover:text-white sm:inline">
         Experten-Modus
       </span>
       <span

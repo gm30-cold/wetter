@@ -18,3 +18,11 @@ __pycache__/
 ios/build/
 ios/*.xcodeproj/xcuserdata/
 ios/*.xcworkspace/xcuserdata/
+
+# Secrets / Tokens — NIEMALS committen
+token*/
+*token*.rtf
+*token*.txt
+*.pem
+.env
+.env.*
